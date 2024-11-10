@@ -1,0 +1,91 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+media/
+staticfiles/
+
+# Django migrations
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Virtual environments
+.env/
+venv/
+ENV/
+env/
+venv.bak/
+.vscode/
+
+# IDEs and editors
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.vscode/
+*.code-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment variables
+.env
+.env.*
+*.env
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# Poetry
+#poetry.lock
+
+# pyproject.toml (sometimes used for project config)
+#pyproject.toml
+
+# Test output
+coverage/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Security-related
+secrets.json
+
+# Other cache files
+*.log
+*.cache
+*.coverage
+*.egg-info/
+*.eggs/
+dist/
+build/
+__pypackages__/
+node_modules/
+
+# Celery task queue logs
+celerybeat-schedule
+celerybeat.pid
+
+# local .pytest_cache
+.pytest_cache/
