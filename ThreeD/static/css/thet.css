@@ -1,0 +1,66 @@
+body{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.polyhedron {
+    position: relative;
+    margin: 0 auto 0;
+    padding: 0;
+    width: 16em;
+    height: 16em;
+    perspective: 100em;
+    transform-style: preserve-3d;
+    transition: transform 0.1s ease-out;
+    cursor: grab;
+}
+.polyhedron:active{
+    cursor: grabbing;
+}
+.side, .side:after {
+    overflow: hidden;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    backface-visibility: hidden;
+    opacity: 0.8 !important;
+
+}
+
+.triangle:after {
+    transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-50%);
+    content: '';
+
+}
+
+.tetrahedron .side.triangle:first-child {
+    transform: translateZ(4.6188em) rotateX(19.47deg) rotate(30deg) skewY(30deg) scaleX(.866);
+}
+
+.tetrahedron .side.triangle:first-child:after {
+    background: palevioletred;
+}
+
+.tetrahedron .side.triangle:nth-child(2) {
+    transform: rotateY(120deg) translateZ(4.6188em) rotateX(19.47deg) rotate(30deg) skewY(30deg) scaleX(.866);
+}
+
+.tetrahedron .side.triangle:nth-child(2):after {
+    background: rgb(83, 64, 255);
+}
+
+.tetrahedron .side.triangle:nth-child(3) {
+    transform: rotateY(-120deg) translateZ(4.6188em) rotateX(19.47deg) rotate(30deg) skewY(30deg) scaleX(.866);
+}
+
+.tetrahedron .side.triangle:nth-child(3):after {
+    background: rgb(98, 187, 95);
+}
+
+.tetrahedron .side.triangle:last-child {
+    transform: translateZ(4.6188em) rotateX(90deg) rotateY(180deg) rotate(30deg) skewY(30deg) scaleX(.866);
+}
+
+.tetrahedron .side.triangle:last-child:after {
+    background: rgb(18, 0, 177);
+}

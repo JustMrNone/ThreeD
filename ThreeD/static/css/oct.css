@@ -1,0 +1,68 @@
+
+
+.scene3{
+  position: relative;
+  margin-top: 145px;
+  margin-bottom: 80px;
+  align-items: center;
+  justify-content: center;
+  display: inline-block; /* Necessary to make it respond to text-align */
+}
+
+.solid {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  animation: spin 16s infinite linear;
+  transform-style: preserve-3d;
+}
+
+.solid .sideoct {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  height: 173.2px;
+  width: 200px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0idHJpYW5nbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMzNi45MiAyOTEuNzUiPgoJPHBvbHlnb24gcG9pbnRzPSIzMzQuNzUgMjkwLjUgMi4xNyAyOTAuNSAxNjguNDcgMi41IDMzNC43NSAyOTAuNSIgZmlsbD0icmdiYSgxMzMsMTMzLDI1NSwwLjgpIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMi41Ii8+Cjwvc3ZnPg==");
+  transform-origin: 50% 100%;
+}
+
+.solid .sideoct:nth-child(1) {
+  transform: rotateY(90deg) translateZ(100px) rotateX(35.27deg);
+  border-bottom-color: rgba(240, 87, 87, 0.4);
+}
+
+.solid .sideoct:nth-child(2) {
+  transform: rotateY(180deg) translateZ(100px) rotateX(35.27deg);
+  border-bottom-color: rgba(183, 187, 47, 0.4);
+}
+
+.solid .sideoct:nth-child(3) {
+  transform: rotateY(270deg) translateZ(100px) rotateX(35.27deg);
+  border-bottom-color: rgba(107, 153, 254, 0.4);
+}
+
+.solid .sideoct:nth-child(4) {
+  transform: rotateY(360deg) translateZ(100px) rotateX(35.27deg);
+  border-bottom-color: rgba(170, 151, 2, 0.4);
+}
+
+.solid .sideoct:nth-child(5) {
+  transform: rotateY(450deg) translateZ(100px) rotateX(144.73deg);
+  border-bottom-color: rgba(142, 196, 151, 0.4);
+}
+
+.solid .sideoct:nth-child(6) {
+  transform: rotateY(540deg) translateZ(100px) rotateX(144.73deg);
+  border-bottom-color: rgba(169, 245, 147, 0.4);
+}
+
+.solid .sideoct:nth-child(7) {
+  transform: rotateY(630deg) translateZ(100px) rotateX(144.73deg);
+  border-bottom-color: rgba(17, 188, 8, 0.4);
+}
+
+.solid .sideoct:nth-child(8) {
+  transform: rotateY(720deg) translateZ(100px) rotateX(144.73deg);
+  border-bottom-color: rgba(104, 202, 51, 0.4);
+}

@@ -4,14 +4,14 @@ services:
   web:
     build:
       context: .                   # Specifies the build context (the root of your project)
-      dockerfile: Dockerfile.dev   # Uses the development Dockerfile
+      dockerfile: Dockerfile  # Uses the development Dockerfile
     command: python manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"                # Maps port 8000 on the host to port 8000 in the container
     volumes:
       - .:/app                     # Mounts the current directory to /app in the container
     environment:
-      - DJANGO_SETTINGS_MODULE=QuantumCo.settings  # Points to your development settings module
+      - DJANGO_SETTINGS_MODULE=Objects3D.settings  # Points to your development settings module
       - DEVELOPMENT_MODE=True
 
 #docker-compose -f docker-compose.dev.yml up --build
