@@ -5,13 +5,13 @@
     margin: 100px auto;
     
   }
-  .scene1, .scene2, .scene3, .scene4, .scene5{
+  .scene1, .scene2, .scene3, .scene4, .scene5, .scene6{
     display: none !important;
 }
 .scene2{
-  margin-top: 145px;
+  margin-top: 125px;
 }
-.scene1.visible, .scene2.visible, .scene3.visible, .scene4.visible, .scene5.visible {
+.scene1.visible, .scene2.visible, .scene3.visible, .scene4.visible, .scene5.visible, .scene6.visible {
     display: block !important;
 }
 
@@ -55,6 +55,8 @@
     justify-content: center;
     gap: 8px;
     padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   /* Styling for each dot */

@@ -1,0 +1,28 @@
+
+.scene6{
+  margin-top: -80px;
+  cursor: grab;
+}
+.scene6:active{
+  cursor: grabbing;
+}
+.button-container {
+  margin-top: -80px;
+  margin-bottom: -10px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  
+}
+
+input[type=button] {
+  width: 100px;
+  height: 30px;
+  background-color: hsl(0, 0%, 60%);
+  border: 0;
+  cursor: pointer !important;
+}
+
+.subbtn {
+  margin: auto;
+}

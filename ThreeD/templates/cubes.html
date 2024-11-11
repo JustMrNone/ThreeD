@@ -10,14 +10,17 @@
     <link rel="stylesheet" href="{% static 'css/oct.css' %}">
     <link rel="stylesheet" href="{% static 'css/dod.css' %}">
     <link rel="stylesheet" href="{% static 'css/ico.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icosub.css' %}">
 </head>
 <body>
+    
     <div class="mainbody">
         {% include 'components/cube.html' %}
         {% include 'components/teth.html' %}
         {% include 'components/oct.html' %}
         {% include 'components/dod.html' %}
         {% include 'components/ico.html' %}
+        {% include 'components/icosub.html' %}
         {% include 'components/dot.html' %}
         
     </div>
@@ -31,5 +34,6 @@
 <script src="{% static 'js/oct.js' %}"></script>
 <script src="{% static 'js/dod.js' %}"></script>
 <script src="{% static 'js/ico.js' %}"></script>
+<script src="{% static 'js/icosub.js' %}"></script>
 
 </html>
