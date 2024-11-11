@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const scene2 = document.querySelector('.scene2');
     const scene3 = document.querySelector('.scene3');
     const scene4 = document.querySelector('.scene4');
+    const scene5 = document.querySelector('.scene5');
+
     // Function to switch active dot and update scene visibility
     function setActiveDot(index) {
         dots.forEach((dot, i) => {
@@ -17,21 +19,37 @@ document.addEventListener('DOMContentLoaded', () => {
             scene2.classList.remove('visible');
             scene3.classList.remove('visible');
             scene4.classList.remove('visible');
+            scene5.classList.remove('visible');
         } else if (index == 1) {
             scene1.classList.remove('visible');
             scene2.classList.add('visible');
             scene3.classList.remove('visible');
             scene4.classList.remove('visible');
+            scene5.classList.remove('visible');
         } else if (index == 2){
             scene3.classList.add('visible');
             scene1.classList.remove('visible');
             scene2.classList.remove('visible'); 
             scene4.classList.remove('visible');
+            scene5.classList.remove('visible');
         }else if (index == 3){
+            scene4.classList.add('visible');
             scene1.classList.remove('visible');
             scene2.classList.remove('visible');
             scene3.classList.remove('visible');
-            scene4.classList.add('visible');
+            scene5.classList.remove('visible');
+        }else if (index == 4){
+            scene1.classList.remove('visible');
+            scene2.classList.remove('visible');
+            scene3.classList.remove('visible');
+            scene4.classList.remove('visible');
+            scene5.classList.add('visible');
+        }else {
+            scene1.classList.remove('visible');
+            scene2.classList.remove('visible');
+            scene3.classList.remove('visible');
+            scene4.classList.remove('visible');
+            scene5.classList.remove('visible');
         }
 
         

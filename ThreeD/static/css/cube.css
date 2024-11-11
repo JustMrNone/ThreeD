@@ -5,13 +5,13 @@
     margin: 100px auto;
     
   }
-  .scene1, .scene2, .scene3, .scene4{
+  .scene1, .scene2, .scene3, .scene4, .scene5{
     display: none !important;
 }
 .scene2{
   margin-top: 145px;
 }
-.scene1.visible, .scene2.visible, .scene3.visible, .scene4.visible {
+.scene1.visible, .scene2.visible, .scene3.visible, .scene4.visible, .scene5.visible {
     display: block !important;
 }
 

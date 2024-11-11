@@ -1,42 +1,40 @@
 const dodecahedron = document.querySelector('.dodecahedron');
 
-let isDraggingdod = false;
-let previousMouseX = 0;
-let previousMouseY = 0;
-let rotationX = 0;
-let rotationY = 0;
+let isDraggingDodecahedron = false;
+let previousMouseXDodecahedron = 0;
+let previousMouseYDodecahedron = 0;
+let rotationXDodecahedron = 0;
+let rotationYDodecahedron = 0;
 
-// Function to start dragging
 dodecahedron.addEventListener('mousedown', (event) => {
-  isDraggingdod = true;
-  previousMouseX = event.clientX;
-  previousMouseY = event.clientY;
+  isDraggingDodecahedron = true;
+  previousMouseXDodecahedron = event.clientX;
+  previousMouseYDodecahedron = event.clientY;
+
+  dodecahedron.style.animation = 'none';
+  dodecahedron.style.transition = 'none';
 });
 
-// Function to stop dragging
 document.addEventListener('mouseup', () => {
-  isDraggingdod = false;
+  if (isDraggingDodecahedron) {
+    isDraggingDodecahedron = false;
+    dodecahedron.style.transition = 'transform 0.3s ease-out';
+    setTimeout(() => {
+      dodecahedron.style.animation = 'spin 16s infinite linear';
+    }, 300);
+  }
 });
 
-// Function to rotate the dodecahedron based on mouse movement
 document.addEventListener('mousemove', (event) => {
-  if (!isDraggingdod) return;
+  if (!isDraggingDodecahedron) return;
 
-  const deltaX = event.clientX - previousMouseX;
-  const deltaY = event.clientY - previousMouseY;
-  rotationY += deltaX * 0.2;
-  rotationX -= deltaY * 0.2;
+  const deltaX = event.clientX - previousMouseXDodecahedron;
+  const deltaY = event.clientY - previousMouseYDodecahedron;
+  rotationYDodecahedron += deltaX * 0.2;
+  rotationXDodecahedron -= deltaY * 0.2;
 
-  // Apply the rotation
-  dodecahedron.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+  dodecahedron.style.transform = `rotateX(${rotationXDodecahedron}deg) rotateY(${rotationYDodecahedron}deg)`;
 
-  previousMouseX = event.clientX;
-  previousMouseY = event.clientY;
-});
-
-// Optional: Add smooth rotation stop on mouseup
-dodecahedron.style.transition = 'transform 0.1s ease';
-document.addEventListener('mouseup', () => {
-  isDraggingdod = false;
-  dodecahedron.style.transition = 'transform 0.3s ease-out';
+  previousMouseXDodecahedron = event.clientX;
+  previousMouseYDodecahedron = event.clientY;
 });
