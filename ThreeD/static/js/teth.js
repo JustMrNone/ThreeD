@@ -2,7 +2,7 @@
 (function () {
     const polyhedron = document.querySelector('.polyhedron');
 
-    let isDragging = false;
+    let isDraggingteth = false;
     let startX = 0;
     let startY = 0;
     let rotationX = 0;
@@ -10,7 +10,7 @@
 
     // Function to start dragging
     function startDrag(event) {
-        isDragging = true;
+        isDraggingteth = true;
         startX = event.clientX;
         startY = event.clientY;
 
@@ -20,7 +20,7 @@
 
     // Function to drag the polyhedron
     function drag(event) {
-        if (!isDragging) return;
+        if (!isDraggingteth) return;
 
         const dx = event.clientX - startX;
         const dy = event.clientY - startY;
@@ -38,7 +38,7 @@
 
     // Function to stop dragging
     function stopDrag() {
-        isDragging = false;
+        isDraggingteth = false;
     }
 
     // Event listeners for mouse actions

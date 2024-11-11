@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="{% static 'css/cube.css' %}">
     <link rel="stylesheet" href="{% static 'css/thet.css' %}">
     <link rel="stylesheet" href="{% static 'css/oct.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dod.css' %}">
 </head>
 <body>
     <div class="mainbody">
         {% include 'components/cube.html' %}
         {% include 'components/teth.html' %}
         {% include 'components/oct.html' %}
+        {% include 'components/dod.html' %}
         {% include 'components/dot.html' %}
+        
     </div>
 
 
@@ -24,5 +27,6 @@
 <script src="{% static 'js/dot.js' %}"></script>
 <script src="{% static 'js/teth.js' %}"></script>
 <script src="{% static 'js/oct.js' %}"></script>
+<script src="{% static 'js/dod.js' %}"></script>
 
 </html>
