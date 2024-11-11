@@ -9,7 +9,9 @@
     display: none !important;
 }
 .scene2{
-  margin-top: 125px;
+  margin-top: 105px;
+  margin-bottom: 40px;
+  z-index: -1;
 }
 .scene1.visible, .scene2.visible, .scene3.visible, .scene4.visible, .scene5.visible, .scene6.visible {
     display: block !important;
